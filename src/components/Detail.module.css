@@ -1,0 +1,14 @@
+.contenedor {
+  display: flex;
+  flex-direction: row; /* Cambiamos la dirección del flexbox a horizontal */
+  justify-content: space-around;
+}
+
+.texto {
+  order: 1;
+}
+
+.imagen {
+  order: 2;
+  border-radius: 15px;
+}
