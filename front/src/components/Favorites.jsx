@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, useDispatch } from "react-redux";
-import styles from "../components/Favorites.module.css";
+import styles from "./Favorites.module.css";
 import { orderCards, filterCards, showAllCards } from "../redux/actions";
 
 const mapStateToProps = (state) => {

@@ -32,10 +32,11 @@ function App() {
     !access && navigate("/");
   }, [access, navigate]);
 
-  const onSearch = (id) => {
-    const URL_BASE = "https://be-a-rym.up.railway.app/api";
-    const KEY = "6f3489c04ad1.f60738f91dc6380712fb";
-    fetch(`${URL_BASE}/character/${id}?key=${KEY}`)
+  const onSearch = (character) => {
+    // const URL_BASE = "http://localhost:3001/rickandmorty";
+    // const KEY = "6f3489c04ad1.f60738f91dc6380712fb";
+    //   fetch(`${URL_BASE}/character/${id}?key=${KEY}`)
+    fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.name) {
